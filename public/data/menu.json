@@ -1,9 +1,18 @@
 {
   "categories": [],
   "bestSellers": [
-    "Spicy Chicken Sandwich Combo",
-    "Crispy Chicken Katsu",
-    "Popcorn Chicken",
+    {
+      "name": "Spicy Chicken Sandwich Combo",
+      "price": 12.99
+    },
+    {
+      "name": "Crispy Chicken Katsu",
+      "price": 13.49
+    },
+    {
+      "name": "Popcorn Chicken",
+      "price": 8.99
+    },
     "Chicken Wings Bucket 10",
     "Curry Chicken Katsu Rice Bowl"
   ]

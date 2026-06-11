@@ -77,6 +77,10 @@
   transform: rotate(1.5deg);
 }
 
+.hero-image-slot img {
+  object-position: 64% center;
+}
+
 .cloud {
   position: absolute;
   z-index: 0;
@@ -182,6 +186,7 @@ address {
 
   .hero-image-slot img {
     max-height: 320px;
+    object-position: 58% center;
   }
 }
 
