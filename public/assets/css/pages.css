@@ -68,7 +68,7 @@
   justify-content: center;
 }
 
-.hero-photo-placeholder {
+.hero-image-slot {
   width: min(100%, 440px);
   min-height: clamp(270px, 38vw, 430px);
   border-radius: 28px;
@@ -171,10 +171,15 @@ address {
     justify-content: flex-start;
   }
 
-  .hero-photo-placeholder {
+  .hero-image-slot {
     width: 100%;
-    min-height: 250px;
+    min-height: 240px;
+    max-height: 320px;
     transform: none;
+  }
+
+  .hero-image-slot img {
+    max-height: 320px;
   }
 }
 
