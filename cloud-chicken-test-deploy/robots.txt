@@ -1,0 +1,6 @@
+# TEMPORARY TEST DEPLOYMENT ONLY
+# This is not a final SEO robots.txt file.
+# Update robots.txt, sitemap.xml, canonical URLs, and Open Graph URLs after the real production domain is purchased.
+
+User-agent: *
+Disallow: /

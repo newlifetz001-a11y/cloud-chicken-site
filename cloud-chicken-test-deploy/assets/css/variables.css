@@ -1,0 +1,18 @@
+:root {
+  --color-sky: #8fd0f4;
+  --color-sky-soft: #dff4ff;
+  --color-cloud: #ffffff;
+  --color-cream: #fff8e8;
+  --color-orange: #f47b20;
+  --color-orange-dark: #c94f12;
+  --color-yellow: #ffd166;
+  --color-ink: #263238;
+  --color-muted: #5f6f76;
+  --color-line: #e8ded0;
+  --font-base: Arial, Helvetica, sans-serif;
+  --radius-small: 8px;
+  --radius-round: 999px;
+  --shadow-soft: 0 18px 48px rgba(38, 50, 56, 0.14);
+  --container: 1120px;
+  --space-page: clamp(1rem, 4vw, 2rem);
+}

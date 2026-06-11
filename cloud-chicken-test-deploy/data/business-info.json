@@ -1,0 +1,57 @@
+{
+  "name": "Cloud Chicken",
+  "slogan": "You found the crunch.",
+  "address": {
+    "street": "66 South Dobson Road #124",
+    "city": "Mesa",
+    "state": "AZ",
+    "postalCode": "85202"
+  },
+  "phone": "(480) 859-8802",
+  "orderUrl": "https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093",
+  "hours": [
+    {
+      "day": "Monday",
+      "open": null,
+      "close": null,
+      "label": "Closed"
+    },
+    {
+      "day": "Tuesday",
+      "open": "11:00 AM",
+      "close": "8:00 PM",
+      "label": "11:00 AM - 8:00 PM"
+    },
+    {
+      "day": "Wednesday",
+      "open": "11:00 AM",
+      "close": "8:00 PM",
+      "label": "11:00 AM - 8:00 PM"
+    },
+    {
+      "day": "Thursday",
+      "open": "11:00 AM",
+      "close": "8:00 PM",
+      "label": "11:00 AM - 8:00 PM"
+    },
+    {
+      "day": "Friday",
+      "open": "11:00 AM",
+      "close": "8:30 PM",
+      "label": "11:00 AM - 8:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "open": "11:00 AM",
+      "close": "8:30 PM",
+      "label": "11:00 AM - 8:30 PM"
+    },
+    {
+      "day": "Sunday",
+      "open": "11:00 AM",
+      "close": "8:00 PM",
+      "label": "11:00 AM - 8:00 PM"
+    }
+  ],
+  "halalWording": "Halal chicken available."
+}
