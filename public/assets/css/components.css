@@ -171,7 +171,8 @@
 }
 
 .product-image-slot {
-  min-height: 190px;
+  height: 220px;
+  min-height: 220px;
   border-bottom: 1px solid var(--color-line);
 }
 
