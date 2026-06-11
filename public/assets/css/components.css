@@ -66,6 +66,32 @@
   text-transform: uppercase;
 }
 
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.15rem;
+}
+
+.trust-badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0.4rem 0.75rem;
+  color: var(--color-orange-dark);
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(244, 123, 32, 0.28);
+  border-radius: var(--radius-round);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -73,6 +99,7 @@
 }
 
 .feature-card,
+.product-card,
 .hours-card,
 .plate-card {
   background: var(--color-cloud);
@@ -86,14 +113,54 @@
   padding: 1.1rem;
 }
 
+.product-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.product-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1.1rem;
+}
+
+.product-card-body p {
+  flex: 1;
+}
+
+.photo-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 210px;
+  padding: 1rem;
+  color: var(--color-orange-dark);
+  background:
+    linear-gradient(135deg, rgba(244, 123, 32, 0.12), rgba(255, 209, 102, 0.18)),
+    var(--color-cream);
+  border: 2px dashed rgba(244, 123, 32, 0.4);
+  text-align: center;
+  font-weight: 900;
+}
+
+.product-photo-placeholder {
+  min-height: 190px;
+  border-width: 0 0 2px;
+}
+
 .feature-card h3,
+.product-card h3,
 .hours-card h3 {
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.25rem;
   font-size: 1.05rem;
   line-height: 1.25;
 }
 
 .feature-card p,
+.product-card p,
 .section p,
 .hero-copy,
 address,
@@ -119,17 +186,50 @@ dd {
 }
 
 @media (max-width: 980px) {
-  .feature-grid {
+  .feature-grid,
+  .product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 620px) {
-  .feature-grid {
+  .feature-grid,
+  .product-grid {
     grid-template-columns: 1fr;
   }
 
   .button {
     width: 100%;
+  }
+
+  .brand {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+    gap: 0.48rem;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    font-size: 0.82rem;
+  }
+
+  .brand-text {
+    overflow: hidden;
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .header-order {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    width: auto;
+    min-height: 40px;
+    padding: 0.55rem 0.72rem;
+    font-size: 0.82rem;
+    white-space: nowrap;
   }
 }
