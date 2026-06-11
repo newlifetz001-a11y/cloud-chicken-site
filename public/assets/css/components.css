@@ -100,6 +100,9 @@
 
 .feature-card,
 .product-card,
+.info-card,
+.menu-preview-card,
+.faq-item,
 .hours-card,
 .plate-card {
   background: var(--color-cloud);
@@ -201,6 +204,59 @@ dd {
   line-height: 1;
 }
 
+.info-grid,
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.info-card,
+.faq-item {
+  min-height: 170px;
+  padding: 1.2rem;
+}
+
+.info-card h3,
+.menu-preview-card h3,
+.faq-item h3 {
+  margin-bottom: 0.55rem;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.info-card p,
+.menu-preview-card p,
+.faq-item p {
+  color: var(--color-muted);
+}
+
+.menu-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.menu-preview-card {
+  display: flex;
+  min-height: 210px;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.1rem;
+}
+
+.menu-preview-card p {
+  flex: 1;
+}
+
+.menu-preview-card a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  color: var(--color-orange-dark);
+  font-weight: 900;
+}
+
 .hours-card {
   width: min(100%, 420px);
   padding: 1.25rem;
@@ -220,14 +276,20 @@ dd {
 
 @media (max-width: 980px) {
   .feature-grid,
-  .product-grid {
+  .product-grid,
+  .info-grid,
+  .menu-preview-grid,
+  .faq-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 620px) {
   .feature-grid,
-  .product-grid {
+  .product-grid,
+  .info-grid,
+  .menu-preview-grid,
+  .faq-grid {
     grid-template-columns: 1fr;
   }
 
