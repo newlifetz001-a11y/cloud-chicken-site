@@ -63,6 +63,49 @@
   font-weight: 900;
 }
 
+.family-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(3.4rem, 8vw, 6rem) var(--space-page) clamp(5rem, 9vw, 7rem);
+}
+
+.family-hero::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 54px;
+  content: "";
+  background-color: var(--color-orange);
+  background-image:
+    linear-gradient(45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%);
+  background-position: 0 0, 0 16px, 16px -16px, -16px 0;
+  background-size: 32px 32px;
+}
+
+.family-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.family-hero h1 {
+  max-width: 820px;
+  font-size: clamp(3.25rem, 8vw, 7rem);
+  line-height: 0.92;
+}
+
+.family-hero p {
+  max-width: 650px;
+  margin-top: 1rem;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+}
+
 .hero::after {
   position: absolute;
   right: 0;
@@ -246,6 +289,34 @@
   border-top: 1px solid var(--color-line);
 }
 
+.family-options {
+  border-top: 1px solid var(--color-line);
+}
+
+.family-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: none;
+  background: var(--color-sky-soft);
+}
+
+.family-cta > div {
+  max-width: 720px;
+}
+
+.family-cta p {
+  max-width: 680px;
+}
+
+.family-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
 .menu-quick-links {
   display: flex;
   flex-wrap: wrap;
@@ -328,6 +399,14 @@ address {
   .menu-visit-strip {
     grid-template-columns: 1fr;
   }
+
+  .family-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .family-cta-actions {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 620px) {
@@ -342,5 +421,13 @@ address {
   .trust-badges span {
     min-height: 32px;
     font-size: 0.84rem;
+  }
+
+  .family-hero {
+    padding-top: 2.5rem;
+  }
+
+  .family-hero h1 {
+    font-size: clamp(3.1rem, 15vw, 5.2rem);
   }
 }
