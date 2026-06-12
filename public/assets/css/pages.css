@@ -14,6 +14,55 @@
   padding-bottom: clamp(4.5rem, 8vw, 6rem);
 }
 
+.menu-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(3rem, 8vw, 5.5rem) var(--space-page);
+}
+
+.menu-hero::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 42px;
+  content: "";
+  background-color: var(--color-orange);
+  background-image:
+    linear-gradient(45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%);
+  background-position: 0 0, 0 16px, 16px -16px, -16px 0;
+  background-size: 32px 32px;
+}
+
+.menu-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.menu-hero h1 {
+  max-width: 760px;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: 0.95;
+}
+
+.menu-hero p {
+  max-width: 680px;
+  margin-top: 1rem;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+}
+
+.menu-hero .menu-note {
+  color: var(--color-orange-dark);
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+
 .hero::after {
   position: absolute;
   right: 0;
@@ -197,6 +246,47 @@
   border-top: 1px solid var(--color-line);
 }
 
+.menu-quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.menu-quick-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0.45rem 0.75rem;
+  color: var(--color-orange-dark);
+  background: var(--color-cloud);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-round);
+  font-weight: 900;
+}
+
+.menu-category {
+  border-top: 1px solid var(--color-line);
+}
+
+.menu-category-heading {
+  max-width: 760px;
+  margin-bottom: 1.5rem;
+}
+
+.menu-category-heading h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.menu-visit-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.5rem;
+  border-top: 1px solid var(--color-line);
+}
+
 address {
   margin: 1rem 0 0.5rem;
   font-style: normal;
@@ -233,6 +323,10 @@ address {
 
   .visit-preview-strong::before {
     display: none;
+  }
+
+  .menu-visit-strip {
+    grid-template-columns: 1fr;
   }
 }
 
