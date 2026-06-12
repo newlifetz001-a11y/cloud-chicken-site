@@ -1,5 +1,7 @@
 .section-sky {
-  background: var(--color-sky-soft);
+  background:
+    radial-gradient(circle at 82% 22%, rgba(255, 255, 255, 0.58) 0 12%, transparent 13%),
+    linear-gradient(180deg, #e7f7ff 0%, var(--color-sky-soft) 100%);
 }
 
 .hero {
@@ -8,7 +10,7 @@
   grid-template-columns: minmax(0, 1fr) minmax(310px, 0.82fr);
   align-items: center;
   gap: clamp(1.75rem, 5vw, 4rem);
-  min-height: calc(100vh - 74px);
+  min-height: min(760px, calc(100vh - 74px));
   overflow: hidden;
   padding-top: clamp(2.8rem, 7vw, 5.5rem);
   padding-bottom: clamp(4.5rem, 8vw, 6rem);
@@ -17,7 +19,7 @@
 .menu-hero {
   position: relative;
   overflow: hidden;
-  padding: clamp(3rem, 8vw, 5.5rem) var(--space-page);
+  padding: clamp(3rem, 7vw, 5rem) var(--space-page) clamp(4.75rem, 8vw, 6rem);
 }
 
 .menu-hero::after {
@@ -67,7 +69,7 @@
 .family-hero {
   position: relative;
   overflow: hidden;
-  padding: clamp(3.4rem, 8vw, 6rem) var(--space-page) clamp(5rem, 9vw, 7rem);
+  padding: clamp(3.4rem, 7vw, 5.75rem) var(--space-page) clamp(5rem, 9vw, 7rem);
 }
 
 .family-hero::after {
@@ -111,7 +113,7 @@
 .visit-hero {
   position: relative;
   overflow: hidden;
-  padding: clamp(3rem, 8vw, 5.75rem) var(--space-page);
+  padding: clamp(3rem, 7vw, 5.5rem) var(--space-page) clamp(4.75rem, 8vw, 6rem);
 }
 
 .visit-hero::after {
@@ -160,7 +162,7 @@
   position: relative;
   overflow: hidden;
   min-height: calc(100vh - 148px);
-  padding: clamp(3rem, 8vw, 6rem) var(--space-page);
+  padding: clamp(3rem, 7vw, 5.75rem) var(--space-page);
 }
 
 .not-found::after {
@@ -239,7 +241,7 @@
 
 .hero h1 {
   max-width: 780px;
-  font-size: clamp(3.6rem, 10vw, 8.5rem);
+  font-size: clamp(3.6rem, 9vw, 8rem);
   line-height: 0.9;
   overflow-wrap: break-word;
 }
@@ -270,11 +272,12 @@
 }
 
 .hero-image-slot {
-  width: min(100%, 440px);
-  height: clamp(270px, 38vw, 430px);
-  min-height: clamp(270px, 38vw, 430px);
-  border-radius: 28px;
-  box-shadow: var(--shadow-soft);
+  width: min(100%, 470px);
+  height: clamp(285px, 38vw, 440px);
+  min-height: clamp(285px, 38vw, 440px);
+  border: 6px solid rgba(255, 255, 255, 0.72);
+  border-radius: 22px;
+  box-shadow: 0 28px 70px rgba(38, 50, 56, 0.18);
   transform: rotate(1.5deg);
 }
 
@@ -331,8 +334,8 @@
 
 .section-checker::before {
   display: block;
-  width: 88px;
-  height: 88px;
+  width: 76px;
+  height: 76px;
   margin-bottom: 1.5rem;
   content: "";
   background-color: var(--color-orange);
@@ -348,7 +351,7 @@
 
 .section h2 {
   margin-bottom: 0.85rem;
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(2rem, 4.5vw, 3.35rem);
   line-height: 1;
 }
 
@@ -359,7 +362,9 @@
 .menu-preview {
   position: relative;
   max-width: none;
-  background: var(--color-sky-soft);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.56), rgba(255, 255, 255, 0)),
+    var(--color-sky-soft);
 }
 
 .menu-preview .section-heading,
@@ -408,7 +413,9 @@
   align-items: center;
   gap: 1.5rem;
   max-width: none;
-  background: var(--color-sky-soft);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.18)),
+    var(--color-sky-soft);
 }
 
 .family-cta > div {
@@ -453,8 +460,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
+  position: sticky;
+  top: 74px;
+  z-index: 4;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  background: rgba(255, 248, 232, 0.94);
+  border-bottom: 1px solid var(--color-line);
+  backdrop-filter: blur(12px);
 }
 
 .menu-quick-links a {
@@ -467,6 +480,14 @@
   border: 1px solid var(--color-line);
   border-radius: var(--radius-round);
   font-weight: 900;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.menu-quick-links a:hover,
+.menu-quick-links a:focus-visible {
+  color: var(--color-cloud);
+  background: var(--color-orange);
+  border-color: var(--color-orange);
 }
 
 .menu-category {
@@ -513,8 +534,8 @@ address {
 
   .hero-image-slot {
     width: 100%;
-    height: 240px;
-    min-height: 240px;
+    height: 260px;
+    min-height: 260px;
     max-height: 320px;
     transform: none;
   }
@@ -556,8 +577,13 @@ address {
   }
 
   .hero h1 {
-    font-size: clamp(3rem, 15vw, 4.9rem);
+    font-size: clamp(3rem, 14vw, 4.7rem);
     line-height: 0.95;
+  }
+
+  .hero {
+    padding-top: 1.75rem;
+    padding-bottom: 3.9rem;
   }
 
   .hero-actions {
@@ -574,7 +600,7 @@ address {
   }
 
   .family-hero {
-    padding-top: 2.5rem;
+    padding-top: 2.25rem;
   }
 
   .family-hero h1 {
@@ -589,11 +615,33 @@ address {
   }
 
   .visit-hero {
-    padding-top: 2.5rem;
+    padding-top: 2.25rem;
   }
 
   .visit-hero h1 {
     font-size: clamp(2.8rem, 13vw, 4.35rem);
     line-height: 1;
+  }
+
+  .menu-hero {
+    padding-top: 2.25rem;
+  }
+
+  .menu-quick-links {
+    top: 102px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .menu-quick-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menu-quick-links a {
+    flex: 0 0 auto;
   }
 }
