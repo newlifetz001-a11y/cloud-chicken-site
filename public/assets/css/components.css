@@ -156,7 +156,7 @@
   height: 100%;
   min-height: inherit;
   object-fit: cover;
-  object-position: center;
+  object-position: var(--image-position, center center);
 }
 
 .image-fallback {
@@ -286,7 +286,7 @@ dd {
 
 .menu-card-image-slot img {
   object-fit: cover;
-  object-position: center;
+  object-position: var(--image-position, center center);
 }
 
 .menu-item-card > div {

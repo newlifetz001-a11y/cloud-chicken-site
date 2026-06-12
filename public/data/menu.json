@@ -15,7 +15,8 @@
             "combo",
             "spicy"
           ],
-          "image": "/assets/images/spicy-chicken-sandwich-combo.jpg"
+          "image": "/assets/images/spicy-chicken-sandwich-combo.jpg",
+          "imagePosition": "58% center"
         },
         {
           "id": "best-crispy-chicken-katsu",
@@ -27,7 +28,8 @@
             "best-seller",
             "fried-chicken"
           ],
-          "image": "/assets/images/crispy-chicken-katsu.jpg"
+          "image": "/assets/images/crispy-chicken-katsu.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "best-popcorn-chicken",
@@ -39,7 +41,8 @@
             "best-seller",
             "side"
           ],
-          "image": "/assets/images/popcorn-chicken.jpg"
+          "image": "/assets/images/popcorn-chicken.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "best-chicken-wings-bucket-10",
@@ -51,7 +54,8 @@
             "best-seller",
             "family-meal"
           ],
-          "image": "/assets/images/chicken-wings-bucket-10.jpg"
+          "image": "/assets/images/chicken-wings-bucket-10.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "best-curry-chicken-katsu-rice-bowl",
@@ -63,7 +67,8 @@
             "best-seller",
             "rice-bowl"
           ],
-          "image": "/assets/images/curry-chicken-katsu-rice-bowl.jpg"
+          "image": "/assets/images/curry-chicken-katsu-rice-bowl.jpg",
+          "imagePosition": "center center"
         }
       ]
     },
@@ -81,7 +86,8 @@
             "combo",
             "rice-bowl"
           ],
-          "image": "/assets/images/curry-chicken-katsu-rice-bowl.jpg"
+          "image": "/assets/images/curry-chicken-katsu-rice-bowl.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "spicy-creamy-alfredo-chicken-rice-bowl-combo",
@@ -94,7 +100,8 @@
             "rice-bowl",
             "spicy"
           ],
-          "image": "/assets/images/spicy-creamy-alfredo-chicken-rice-bowl-combo.jpg"
+          "image": "/assets/images/spicy-creamy-alfredo-chicken-rice-bowl-combo.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "crispy-chicken-sandwich-combo",
@@ -105,7 +112,8 @@
           "tags": [
             "combo"
           ],
-          "image": "/assets/images/crispy-chicken-sandwich-combo.jpg"
+          "image": "/assets/images/crispy-chicken-sandwich-combo.jpg",
+          "imagePosition": "56% center"
         },
         {
           "id": "spicy-chicken-sandwich-combo",
@@ -117,7 +125,8 @@
             "combo",
             "spicy"
           ],
-          "image": "/assets/images/spicy-chicken-sandwich-combo.jpg"
+          "image": "/assets/images/spicy-chicken-sandwich-combo.jpg",
+          "imagePosition": "58% center"
         },
         {
           "id": "chicken-katsu-sandwich-combo",
@@ -128,7 +137,8 @@
           "tags": [
             "combo"
           ],
-          "image": "/assets/images/chicken-katsu-sandwich-combo.jpg"
+          "image": "/assets/images/chicken-katsu-sandwich-combo.jpg",
+          "imagePosition": "58% center"
         },
         {
           "id": "chicken-wings-combo",
@@ -140,7 +150,8 @@
             "combo",
             "fried-chicken"
           ],
-          "image": "/assets/images/chicken-wings-combo.jpg"
+          "image": "/assets/images/chicken-wings-combo.jpg",
+          "imagePosition": "50% 56%"
         },
         {
           "id": "popcorn-chicken-meal",
@@ -151,7 +162,8 @@
           "tags": [
             "combo"
           ],
-          "image": "/assets/images/popcorn-chicken.jpg"
+          "image": "/assets/images/popcorn-chicken.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "filet-o-fish-burger-combo",
@@ -162,7 +174,8 @@
           "tags": [
             "combo"
           ],
-          "image": "/assets/images/filet-o-fish-burger-combo.jpg"
+          "image": "/assets/images/filet-o-fish-burger-combo.jpg",
+          "imagePosition": "58% center"
         },
         {
           "id": "meat-lover-crispy-chicken-sandwich-combo",
@@ -173,7 +186,8 @@
           "tags": [
             "combo"
           ],
-          "image": "/assets/images/meat-lover-crispy-chicken-sandwich-combo.jpg"
+          "image": "/assets/images/meat-lover-crispy-chicken-sandwich-combo.jpg",
+          "imagePosition": "58% center"
         }
       ]
     },
@@ -190,7 +204,8 @@
           "tags": [
             "spicy"
           ],
-          "image": "/assets/images/spicy-chicken-sandwich.jpg"
+          "image": "/assets/images/spicy-chicken-sandwich.jpg",
+          "imagePosition": "50% 56%"
         },
         {
           "id": "crispy-chicken-sandwich",
@@ -199,7 +214,8 @@
           "description": "Brioche bun, chicken thigh, lettuce, tomato, and mayo.",
           "price": 8.49,
           "tags": [],
-          "image": "/assets/images/crispy-chicken-sandwich.jpg"
+          "image": "/assets/images/crispy-chicken-sandwich.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "chicken-katsu-sandwich",
@@ -208,7 +224,8 @@
           "description": "Brioche bun, chicken katsu, lettuce, tomato, and honey mustard sauce.",
           "price": 8.99,
           "tags": [],
-          "image": "/assets/images/chicken-katsu-sandwich.jpg"
+          "image": "/assets/images/chicken-katsu-sandwich.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "filet-o-fish-burger",
@@ -217,7 +234,8 @@
           "description": "Brioche bun, fish filet, lettuce, and tartar sauce.",
           "price": 9.99,
           "tags": [],
-          "image": "/assets/images/filet-o-fish-burger.jpg"
+          "image": "/assets/images/filet-o-fish-burger.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "meat-lover-crispy-chicken-sandwich",
@@ -226,7 +244,8 @@
           "description": "Two crispy chicken pieces used as the bun with tomato, lettuce, and mayo.",
           "price": 13.99,
           "tags": [],
-          "image": "/assets/images/meat-lover-crispy-chicken-sandwich.jpg"
+          "image": "/assets/images/meat-lover-crispy-chicken-sandwich.jpg",
+          "imagePosition": "center center"
         }
       ]
     },
@@ -243,7 +262,8 @@
           "tags": [
             "rice-bowl"
           ],
-          "image": "/assets/images/curry-chicken-katsu-rice-bowl.jpg"
+          "image": "/assets/images/curry-chicken-katsu-rice-bowl.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "spicy-creamy-alfredo-chicken-rice-bowl",
@@ -255,7 +275,8 @@
             "rice-bowl",
             "spicy"
           ],
-          "image": "/assets/images/spicy-creamy-alfredo-chicken-rice-bowl.jpg"
+          "image": "/assets/images/spicy-creamy-alfredo-chicken-rice-bowl.jpg",
+          "imagePosition": "center center"
         }
       ]
     },
@@ -272,7 +293,8 @@
           "tags": [
             "fried-chicken"
           ],
-          "image": "/assets/images/crispy-chicken-katsu.jpg"
+          "image": "/assets/images/crispy-chicken-katsu.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "chicken-wings-2-pcs",
@@ -283,7 +305,8 @@
           "tags": [
             "fried-chicken"
           ],
-          "image": "/assets/images/chicken-wings-2pcs.jpg"
+          "image": "/assets/images/chicken-wings-2pcs.jpg",
+          "imagePosition": "center center"
         }
       ]
     },
@@ -300,7 +323,8 @@
           "tags": [
             "family-meal"
           ],
-          "image": "/assets/images/chicken-wings-bucket-10.jpg"
+          "image": "/assets/images/chicken-wings-bucket-10.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "popcorn-chicken-family-bucket",
@@ -311,7 +335,8 @@
           "tags": [
             "family-meal"
           ],
-          "image": "/assets/images/popcorn-chicken-family-bucket.jpg"
+          "image": "/assets/images/popcorn-chicken-family-bucket.jpg",
+          "imagePosition": "50% 45%"
         },
         {
           "id": "mixed-family-bucket-good-for-two",
@@ -322,7 +347,8 @@
           "tags": [
             "family-meal"
           ],
-          "image": "/assets/images/mixed-family-bucket-good-for-two.jpg"
+          "image": "/assets/images/mixed-family-bucket-good-for-two.jpg",
+          "imagePosition": "center center"
         }
       ]
     },
@@ -339,7 +365,8 @@
           "tags": [
             "side"
           ],
-          "image": "/assets/images/popcorn-chicken.jpg"
+          "image": "/assets/images/popcorn-chicken.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "signature-fries",
@@ -350,7 +377,8 @@
           "tags": [
             "side"
           ],
-          "image": "/assets/images/signature-fries.jpg"
+          "image": "/assets/images/signature-fries.jpg",
+          "imagePosition": "center 56%"
         },
         {
           "id": "waffle-cut-fries",
@@ -361,7 +389,8 @@
           "tags": [
             "side"
           ],
-          "image": "/assets/images/waffle-cut-fries.jpg"
+          "image": "/assets/images/waffle-cut-fries.jpg",
+          "imagePosition": "center 56%"
         },
         {
           "id": "chicken-nuggets-6-pcs",
@@ -372,7 +401,8 @@
           "tags": [
             "side"
           ],
-          "image": "/assets/images/chicken-nuggets-6pcs.jpg"
+          "image": "/assets/images/chicken-nuggets-6pcs.jpg",
+          "imagePosition": "center center"
         },
         {
           "id": "sweet-potato-fries",
@@ -383,7 +413,8 @@
           "tags": [
             "side"
           ],
-          "image": "/assets/images/sweet-potato-fries.jpg"
+          "image": "/assets/images/sweet-potato-fries.jpg",
+          "imagePosition": "center 58%"
         },
         {
           "id": "onion-rings",
@@ -394,7 +425,8 @@
           "tags": [
             "side"
           ],
-          "image": "/assets/images/onion-rings.jpg"
+          "image": "/assets/images/onion-rings.jpg",
+          "imagePosition": "center center"
         }
       ]
     },

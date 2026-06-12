@@ -274,7 +274,7 @@
 }
 
 .hero-image-slot img {
-  object-position: 64% center;
+  object-position: var(--image-position, 64% center);
 }
 
 .cloud {
@@ -516,7 +516,7 @@ address {
 
   .hero-image-slot img {
     max-height: 320px;
-    object-position: 58% center;
+    object-position: var(--image-position, 58% center);
   }
 
   .visit-preview-strong::before {
