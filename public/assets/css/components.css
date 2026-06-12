@@ -13,7 +13,7 @@
   color: var(--color-cloud);
   background: var(--color-orange);
   border-radius: 50%;
-  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.08), 0 8px 18px rgba(201, 79, 18, 0.18);
 }
 
 .brand-text {
@@ -32,12 +32,15 @@
   border-radius: var(--radius-round);
   font-weight: 800;
   box-shadow: 0 8px 0 rgba(201, 79, 18, 0.18);
+  transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
 .button:hover,
 .button:focus-visible {
   background: var(--color-orange-dark);
   border-color: var(--color-orange-dark);
+  box-shadow: 0 5px 0 rgba(201, 79, 18, 0.16);
+  transform: translateY(2px);
 }
 
 .button-secondary {
@@ -49,6 +52,13 @@
 .button-secondary:hover,
 .button-secondary:focus-visible {
   color: var(--color-cloud);
+}
+
+.button:focus-visible,
+.site-nav a:focus-visible,
+.menu-preview-card a:focus-visible {
+  outline: 3px solid rgba(38, 50, 56, 0.28);
+  outline-offset: 3px;
 }
 
 .button-small {
@@ -86,6 +96,22 @@
   font-weight: 900;
 }
 
+.product-meta {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 28px;
+  margin: 0;
+  padding: 0.28rem 0.62rem;
+  color: var(--color-orange-dark);
+  background: rgba(244, 123, 32, 0.1);
+  border: 1px solid rgba(244, 123, 32, 0.2);
+  border-radius: var(--radius-round);
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -118,8 +144,43 @@
 
 .product-card {
   display: flex;
+  position: relative;
   flex-direction: column;
   overflow: hidden;
+  border-color: rgba(244, 123, 32, 0.16);
+}
+
+.product-card::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 8px;
+  content: "";
+  background-color: var(--color-orange);
+  background-image:
+    linear-gradient(45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%);
+  background-position: 0 0, 0 6px, 6px -6px, -6px 0;
+  background-size: 12px 12px;
+}
+
+.product-card,
+.menu-item-card,
+.info-card,
+.menu-preview-card,
+.faq-item {
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.product-card:hover,
+.menu-item-card:hover,
+.menu-preview-card:hover {
+  border-color: rgba(244, 123, 32, 0.42);
+  box-shadow: 0 22px 58px rgba(38, 50, 56, 0.16);
+  transform: translateY(-2px);
 }
 
 .product-card-body {
@@ -128,11 +189,21 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0.75rem;
-  padding: 1.1rem;
+  padding: 1rem 1.1rem 1.35rem;
 }
 
-.product-card-body p {
+.product-card-body > p:not(.product-meta) {
   flex: 1;
+}
+
+.product-card-actions,
+.menu-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.85rem;
+  margin-top: auto;
 }
 
 .image-slot {
@@ -175,8 +246,8 @@
 }
 
 .product-image-slot {
-  height: 220px;
-  min-height: 220px;
+  height: clamp(210px, 24vw, 250px);
+  min-height: 210px;
   border-bottom: 1px solid var(--color-line);
 }
 
@@ -199,7 +270,7 @@ dd {
 
 .product-price {
   color: var(--color-orange-dark);
-  font-size: 1.08rem;
+  font-size: 1.18rem;
   font-weight: 900;
   line-height: 1;
 }
@@ -243,6 +314,7 @@ dd {
   flex-direction: column;
   gap: 0.75rem;
   padding: 1.1rem;
+  border-color: rgba(143, 208, 244, 0.5);
 }
 
 .menu-preview-card p {
@@ -290,7 +362,7 @@ dd {
   object-position: var(--image-position, center center);
 }
 
-.menu-item-card > div {
+.menu-item-content {
   flex: 1;
 }
 
@@ -306,7 +378,7 @@ dd {
 
 .menu-price {
   color: var(--color-orange-dark);
-  font-size: 1.12rem;
+  font-size: 1.2rem;
   font-weight: 900;
   line-height: 1;
 }
@@ -351,6 +423,7 @@ dd {
 
   .button {
     width: 100%;
+    min-height: 50px;
   }
 
   .brand {
@@ -382,5 +455,27 @@ dd {
     padding: 0.55rem 0.72rem;
     font-size: 0.82rem;
     white-space: nowrap;
+  }
+
+  .product-card-body,
+  .menu-item-card {
+    gap: 0.7rem;
+  }
+
+  .product-card-actions,
+  .menu-card-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .product-card-actions .button,
+  .menu-card-footer .button {
+    width: 100%;
+  }
+
+  .product-image-slot,
+  .menu-card-image-slot {
+    height: 215px;
+    min-height: 215px;
   }
 }

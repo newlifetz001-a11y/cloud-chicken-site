@@ -67,7 +67,7 @@ const createMenuItemImage = (item) => {
   return figure;
 };
 
-const createMenuItemCard = (item) => {
+const createMenuItemCard = (item, categoryName) => {
   const article = document.createElement("article");
   article.className = "menu-item-card";
 
@@ -77,6 +77,15 @@ const createMenuItemCard = (item) => {
   }
 
   const content = document.createElement("div");
+  content.className = "menu-item-content";
+
+  if (categoryName) {
+    const meta = document.createElement("p");
+    meta.className = "product-meta";
+    meta.textContent = categoryName;
+    content.append(meta);
+  }
+
   const title = document.createElement("h3");
   title.textContent = item.name;
   content.append(title);
@@ -89,19 +98,23 @@ const createMenuItemCard = (item) => {
 
   article.append(content);
 
+  const footer = document.createElement("div");
+  footer.className = "menu-card-footer";
+
   const price = formatMenuPrice(item.price);
   if (price) {
     const priceElement = document.createElement("p");
     priceElement.className = "menu-price";
     priceElement.textContent = price;
-    article.append(priceElement);
+    footer.append(priceElement);
   }
 
   const orderLink = document.createElement("a");
   orderLink.className = "button button-small";
   orderLink.href = orderOnlineUrl;
   orderLink.textContent = "Order Now";
-  article.append(orderLink);
+  footer.append(orderLink);
+  article.append(footer);
 
   return article;
 };
@@ -127,7 +140,7 @@ const createMenuCategorySection = (category) => {
 
   const grid = document.createElement("div");
   grid.className = "menu-item-grid";
-  category.items.forEach((item) => grid.append(createMenuItemCard(item)));
+  category.items.forEach((item) => grid.append(createMenuItemCard(item, category.name)));
 
   section.append(heading, grid);
   return section;
