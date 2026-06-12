@@ -55,7 +55,8 @@
             "family-meal"
           ],
           "image": "/assets/images/chicken-wings-bucket-10.jpg",
-          "imagePosition": "center center"
+          "imagePosition": "center center",
+          "imageFit": "contain"
         },
         {
           "id": "best-curry-chicken-katsu-rice-bowl",
@@ -68,7 +69,8 @@
             "rice-bowl"
           ],
           "image": "/assets/images/curry-chicken-katsu-rice-bowl.jpg",
-          "imagePosition": "center center"
+          "imagePosition": "center center",
+          "imageFit": "contain"
         }
       ]
     },
@@ -86,8 +88,9 @@
             "combo",
             "rice-bowl"
           ],
-          "image": "/assets/images/curry-chicken-katsu-rice-bowl.jpg",
-          "imagePosition": "center center"
+          "image": "/assets/images/curry-chicken-katsu-rice-meal.jpg",
+          "imagePosition": "center center",
+          "imageFit": "contain"
         },
         {
           "id": "spicy-creamy-alfredo-chicken-rice-bowl-combo",
@@ -101,7 +104,8 @@
             "spicy"
           ],
           "image": "/assets/images/spicy-creamy-alfredo-chicken-rice-bowl-combo.jpg",
-          "imagePosition": "center center"
+          "imagePosition": "center center",
+          "imageFit": "contain"
         },
         {
           "id": "crispy-chicken-sandwich-combo",
@@ -263,7 +267,8 @@
             "rice-bowl"
           ],
           "image": "/assets/images/curry-chicken-katsu-rice-bowl.jpg",
-          "imagePosition": "center center"
+          "imagePosition": "center center",
+          "imageFit": "contain"
         },
         {
           "id": "spicy-creamy-alfredo-chicken-rice-bowl",
@@ -276,7 +281,8 @@
             "spicy"
           ],
           "image": "/assets/images/spicy-creamy-alfredo-chicken-rice-bowl.jpg",
-          "imagePosition": "center center"
+          "imagePosition": "center center",
+          "imageFit": "contain"
         }
       ]
     },
@@ -324,7 +330,8 @@
             "family-meal"
           ],
           "image": "/assets/images/chicken-wings-bucket-10.jpg",
-          "imagePosition": "center center"
+          "imagePosition": "center center",
+          "imageFit": "contain"
         },
         {
           "id": "popcorn-chicken-family-bucket",
@@ -336,7 +343,8 @@
             "family-meal"
           ],
           "image": "/assets/images/popcorn-chicken-family-bucket.jpg",
-          "imagePosition": "50% 45%"
+          "imagePosition": "center center",
+          "imageFit": "contain"
         },
         {
           "id": "mixed-family-bucket-good-for-two",
@@ -348,7 +356,8 @@
             "family-meal"
           ],
           "image": "/assets/images/mixed-family-bucket-good-for-two.jpg",
-          "imagePosition": "center center"
+          "imagePosition": "center center",
+          "imageFit": "contain"
         }
       ]
     },
@@ -378,7 +387,8 @@
             "side"
           ],
           "image": "/assets/images/signature-fries.jpg",
-          "imagePosition": "center 56%"
+          "imagePosition": "center center",
+          "imageFit": "contain"
         },
         {
           "id": "waffle-cut-fries",
@@ -390,7 +400,8 @@
             "side"
           ],
           "image": "/assets/images/waffle-cut-fries.jpg",
-          "imagePosition": "center 56%"
+          "imagePosition": "center center",
+          "imageFit": "contain"
         },
         {
           "id": "chicken-nuggets-6-pcs",
@@ -414,7 +425,8 @@
             "side"
           ],
           "image": "/assets/images/sweet-potato-fries.jpg",
-          "imagePosition": "center 58%"
+          "imagePosition": "center center",
+          "imageFit": "contain"
         },
         {
           "id": "onion-rings",
@@ -426,7 +438,8 @@
             "side"
           ],
           "image": "/assets/images/onion-rings.jpg",
-          "imagePosition": "center center"
+          "imagePosition": "center center",
+          "imageFit": "contain"
         }
       ]
     },
