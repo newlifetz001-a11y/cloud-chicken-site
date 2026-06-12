@@ -53,6 +53,7 @@ const createMenuItemImage = (item) => {
 
   const figure = document.createElement("figure");
   figure.className = "image-slot menu-card-image-slot";
+  figure.style.setProperty("--image-position", item.imagePosition || "center center");
 
   const image = document.createElement("img");
   image.src = item.image;
