@@ -10,7 +10,12 @@
           "category": "Best Sellers",
           "description": "Spicy chicken sandwich served with a side and drink.",
           "price": 12.99,
-          "tags": ["best-seller", "combo", "spicy"]
+          "tags": [
+            "best-seller",
+            "combo",
+            "spicy"
+          ],
+          "image": "/assets/images/spicy-chicken-sandwich-combo.jpg"
         },
         {
           "id": "best-crispy-chicken-katsu",
@@ -18,7 +23,11 @@
           "category": "Best Sellers",
           "description": "Crispy fried chicken katsu.",
           "price": 13.49,
-          "tags": ["best-seller", "fried-chicken"]
+          "tags": [
+            "best-seller",
+            "fried-chicken"
+          ],
+          "image": "/assets/images/crispy-chicken-katsu.jpg"
         },
         {
           "id": "best-popcorn-chicken",
@@ -26,7 +35,11 @@
           "category": "Best Sellers",
           "description": "Boneless popcorn chicken.",
           "price": 8.99,
-          "tags": ["best-seller", "side"]
+          "tags": [
+            "best-seller",
+            "side"
+          ],
+          "image": "/assets/images/popcorn-chicken.jpg"
         },
         {
           "id": "best-chicken-wings-bucket-10",
@@ -34,7 +47,11 @@
           "category": "Best Sellers",
           "description": "10 chicken wings with waffle fries and fries.",
           "price": 17.49,
-          "tags": ["best-seller", "family-meal"]
+          "tags": [
+            "best-seller",
+            "family-meal"
+          ],
+          "image": "/assets/images/chicken-wings-bucket-10.jpg"
         },
         {
           "id": "best-curry-chicken-katsu-rice-bowl",
@@ -42,7 +59,11 @@
           "category": "Best Sellers",
           "description": "Rice bowl with chicken katsu, potato salad, and curry sauce.",
           "price": 14.99,
-          "tags": ["best-seller", "rice-bowl"]
+          "tags": [
+            "best-seller",
+            "rice-bowl"
+          ],
+          "image": "/assets/images/curry-chicken-katsu-rice-bowl.jpg"
         }
       ]
     },
@@ -56,7 +77,11 @@
           "category": "Combo Meals",
           "description": "Rice, chicken katsu, potato salad, curry sauce, egg, and drink.",
           "price": 16.99,
-          "tags": ["combo", "rice-bowl"]
+          "tags": [
+            "combo",
+            "rice-bowl"
+          ],
+          "image": "/assets/images/curry-chicken-katsu-rice-bowl.jpg"
         },
         {
           "id": "spicy-creamy-alfredo-chicken-rice-bowl-combo",
@@ -64,7 +89,12 @@
           "category": "Combo Meals",
           "description": "Rice bowl with protein, kimchi, spicy creamy sauce, egg, and drink.",
           "price": 18.99,
-          "tags": ["combo", "rice-bowl", "spicy"]
+          "tags": [
+            "combo",
+            "rice-bowl",
+            "spicy"
+          ],
+          "image": "/assets/images/spicy-creamy-alfredo-chicken-rice-bowl-combo.jpg"
         },
         {
           "id": "crispy-chicken-sandwich-combo",
@@ -72,7 +102,10 @@
           "category": "Combo Meals",
           "description": "Crispy chicken sandwich served with a side and drink.",
           "price": 12.99,
-          "tags": ["combo"]
+          "tags": [
+            "combo"
+          ],
+          "image": "/assets/images/crispy-chicken-sandwich-combo.jpg"
         },
         {
           "id": "spicy-chicken-sandwich-combo",
@@ -80,7 +113,11 @@
           "category": "Combo Meals",
           "description": "Spicy chicken sandwich served with a side and drink.",
           "price": 12.99,
-          "tags": ["combo", "spicy"]
+          "tags": [
+            "combo",
+            "spicy"
+          ],
+          "image": "/assets/images/spicy-chicken-sandwich-combo.jpg"
         },
         {
           "id": "chicken-katsu-sandwich-combo",
@@ -88,7 +125,10 @@
           "category": "Combo Meals",
           "description": "Chicken katsu sandwich with a side and drink.",
           "price": 13.99,
-          "tags": ["combo"]
+          "tags": [
+            "combo"
+          ],
+          "image": "/assets/images/chicken-katsu-sandwich-combo.jpg"
         },
         {
           "id": "chicken-wings-combo",
@@ -96,7 +136,11 @@
           "category": "Combo Meals",
           "description": "5 chicken wings served with a side and drink.",
           "price": 12.99,
-          "tags": ["combo", "fried-chicken"]
+          "tags": [
+            "combo",
+            "fried-chicken"
+          ],
+          "image": "/assets/images/chicken-wings-combo.jpg"
         },
         {
           "id": "popcorn-chicken-meal",
@@ -104,7 +148,10 @@
           "category": "Combo Meals",
           "description": "Boneless popcorn chicken meal.",
           "price": 12.99,
-          "tags": ["combo"]
+          "tags": [
+            "combo"
+          ],
+          "image": "/assets/images/popcorn-chicken.jpg"
         },
         {
           "id": "filet-o-fish-burger-combo",
@@ -112,7 +159,10 @@
           "category": "Combo Meals",
           "description": "Filet-o-fish burger served with a side and drink.",
           "price": 15.99,
-          "tags": ["combo"]
+          "tags": [
+            "combo"
+          ],
+          "image": "/assets/images/filet-o-fish-burger-combo.jpg"
         },
         {
           "id": "meat-lover-crispy-chicken-sandwich-combo",
@@ -120,7 +170,10 @@
           "category": "Combo Meals",
           "description": "Meat-lover crispy chicken sandwich served with a side and drink.",
           "price": 17.99,
-          "tags": ["combo"]
+          "tags": [
+            "combo"
+          ],
+          "image": "/assets/images/meat-lover-crispy-chicken-sandwich-combo.jpg"
         }
       ]
     },
@@ -134,7 +187,10 @@
           "category": "Chicken Sandwiches",
           "description": "Brioche bun, chicken thigh, lettuce, tomato, and mayo.",
           "price": 8.49,
-          "tags": ["spicy"]
+          "tags": [
+            "spicy"
+          ],
+          "image": "/assets/images/spicy-chicken-sandwich.jpg"
         },
         {
           "id": "crispy-chicken-sandwich",
@@ -142,7 +198,8 @@
           "category": "Chicken Sandwiches",
           "description": "Brioche bun, chicken thigh, lettuce, tomato, and mayo.",
           "price": 8.49,
-          "tags": []
+          "tags": [],
+          "image": "/assets/images/crispy-chicken-sandwich.jpg"
         },
         {
           "id": "chicken-katsu-sandwich",
@@ -150,7 +207,8 @@
           "category": "Chicken Sandwiches",
           "description": "Brioche bun, chicken katsu, lettuce, tomato, and honey mustard sauce.",
           "price": 8.99,
-          "tags": []
+          "tags": [],
+          "image": "/assets/images/chicken-katsu-sandwich.jpg"
         },
         {
           "id": "filet-o-fish-burger",
@@ -158,7 +216,8 @@
           "category": "Chicken Sandwiches",
           "description": "Brioche bun, fish filet, lettuce, and tartar sauce.",
           "price": 9.99,
-          "tags": []
+          "tags": [],
+          "image": "/assets/images/filet-o-fish-burger.jpg"
         },
         {
           "id": "meat-lover-crispy-chicken-sandwich",
@@ -166,7 +225,8 @@
           "category": "Chicken Sandwiches",
           "description": "Two crispy chicken pieces used as the bun with tomato, lettuce, and mayo.",
           "price": 13.99,
-          "tags": []
+          "tags": [],
+          "image": "/assets/images/meat-lover-crispy-chicken-sandwich.jpg"
         }
       ]
     },
@@ -180,7 +240,10 @@
           "category": "Chicken Rice Bowls",
           "description": "Jasmine rice, chicken katsu, potato salad, and curry sauce.",
           "price": 14.99,
-          "tags": ["rice-bowl"]
+          "tags": [
+            "rice-bowl"
+          ],
+          "image": "/assets/images/curry-chicken-katsu-rice-bowl.jpg"
         },
         {
           "id": "spicy-creamy-alfredo-chicken-rice-bowl",
@@ -188,7 +251,11 @@
           "category": "Chicken Rice Bowls",
           "description": "Rice bowl with protein, kimchi, and house spicy creamy sauce.",
           "price": 16.99,
-          "tags": ["rice-bowl", "spicy"]
+          "tags": [
+            "rice-bowl",
+            "spicy"
+          ],
+          "image": "/assets/images/spicy-creamy-alfredo-chicken-rice-bowl.jpg"
         }
       ]
     },
@@ -202,7 +269,10 @@
           "category": "Fried Chicken",
           "description": "Crispy fried chicken katsu.",
           "price": 13.49,
-          "tags": ["fried-chicken"]
+          "tags": [
+            "fried-chicken"
+          ],
+          "image": "/assets/images/crispy-chicken-katsu.jpg"
         },
         {
           "id": "chicken-wings-2-pcs",
@@ -210,7 +280,10 @@
           "category": "Fried Chicken",
           "description": "Crispy chicken wings.",
           "price": 5.45,
-          "tags": ["fried-chicken"]
+          "tags": [
+            "fried-chicken"
+          ],
+          "image": "/assets/images/chicken-wings-2pcs.jpg"
         }
       ]
     },
@@ -224,7 +297,10 @@
           "category": "Buckets & Family Meals",
           "description": "10 chicken wings with waffle fries and fries.",
           "price": 17.49,
-          "tags": ["family-meal"]
+          "tags": [
+            "family-meal"
+          ],
+          "image": "/assets/images/chicken-wings-bucket-10.jpg"
         },
         {
           "id": "popcorn-chicken-family-bucket",
@@ -232,7 +308,10 @@
           "category": "Buckets & Family Meals",
           "description": "Popcorn chicken with waffle fries and fries.",
           "price": 17.49,
-          "tags": ["family-meal"]
+          "tags": [
+            "family-meal"
+          ],
+          "image": "/assets/images/popcorn-chicken-family-bucket.jpg"
         },
         {
           "id": "mixed-family-bucket-good-for-two",
@@ -240,7 +319,10 @@
           "category": "Buckets & Family Meals",
           "description": "2 burgers, 4 chicken wings, popcorn chicken, nuggets, onion rings, fries, waffle fries, sweet potato fries, and 2 drinks.",
           "price": 32.99,
-          "tags": ["family-meal"]
+          "tags": [
+            "family-meal"
+          ],
+          "image": "/assets/images/mixed-family-bucket-good-for-two.jpg"
         }
       ]
     },
@@ -254,7 +336,10 @@
           "category": "Snacks & Sides",
           "description": "Boneless popcorn chicken.",
           "price": 8.99,
-          "tags": ["side"]
+          "tags": [
+            "side"
+          ],
+          "image": "/assets/images/popcorn-chicken.jpg"
         },
         {
           "id": "signature-fries",
@@ -262,7 +347,10 @@
           "category": "Snacks & Sides",
           "description": "Classic fries.",
           "price": 3.99,
-          "tags": ["side"]
+          "tags": [
+            "side"
+          ],
+          "image": "/assets/images/signature-fries.jpg"
         },
         {
           "id": "waffle-cut-fries",
@@ -270,7 +358,10 @@
           "category": "Snacks & Sides",
           "description": "Waffle fries.",
           "price": 6.49,
-          "tags": ["side"]
+          "tags": [
+            "side"
+          ],
+          "image": "/assets/images/waffle-cut-fries.jpg"
         },
         {
           "id": "chicken-nuggets-6-pcs",
@@ -278,7 +369,10 @@
           "category": "Snacks & Sides",
           "description": "6 chicken nuggets.",
           "price": 7.49,
-          "tags": ["side"]
+          "tags": [
+            "side"
+          ],
+          "image": "/assets/images/chicken-nuggets-6pcs.jpg"
         },
         {
           "id": "sweet-potato-fries",
@@ -286,7 +380,10 @@
           "category": "Snacks & Sides",
           "description": "Sweet potato fries.",
           "price": 7.49,
-          "tags": ["side"]
+          "tags": [
+            "side"
+          ],
+          "image": "/assets/images/sweet-potato-fries.jpg"
         },
         {
           "id": "onion-rings",
@@ -294,7 +391,10 @@
           "category": "Snacks & Sides",
           "description": "Onion rings.",
           "price": 7.49,
-          "tags": ["side"]
+          "tags": [
+            "side"
+          ],
+          "image": "/assets/images/onion-rings.jpg"
         }
       ]
     },
@@ -306,43 +406,55 @@
           "id": "coke",
           "name": "Coke",
           "category": "Drinks",
-          "price": 2.50,
-          "tags": ["drink"]
+          "price": 2.5,
+          "tags": [
+            "drink"
+          ]
         },
         {
           "id": "diet-coke",
           "name": "Diet Coke",
           "category": "Drinks",
-          "price": 2.50,
-          "tags": ["drink"]
+          "price": 2.5,
+          "tags": [
+            "drink"
+          ]
         },
         {
           "id": "sprite",
           "name": "Sprite",
           "category": "Drinks",
-          "price": 2.50,
-          "tags": ["drink"]
+          "price": 2.5,
+          "tags": [
+            "drink"
+          ]
         },
         {
           "id": "water",
           "name": "Water",
           "category": "Drinks",
-          "price": 2.00,
-          "tags": ["drink"]
+          "price": 2,
+          "tags": [
+            "drink"
+          ]
         },
         {
           "id": "fanta-orange",
           "name": "Fanta Orange",
           "category": "Drinks",
-          "price": 2.50,
-          "tags": ["drink"]
+          "price": 2.5,
+          "tags": [
+            "drink"
+          ]
         },
         {
           "id": "minute-maid-lemonade",
           "name": "Minute Maid Lemonade",
           "category": "Drinks",
-          "price": 2.50,
-          "tags": ["drink"]
+          "price": 2.5,
+          "tags": [
+            "drink"
+          ]
         }
       ]
     },
@@ -354,57 +466,75 @@
           "id": "special-secret-roasted-onion-garlic-sauce",
           "name": "Special Secret Roasted Onion & Garlic Sauce",
           "category": "Sauces & Add-ons",
-          "price": 1.00,
-          "tags": ["add-on"]
+          "price": 1,
+          "tags": [
+            "add-on"
+          ]
         },
         {
           "id": "sweet-plum",
           "name": "Sweet Plum",
           "category": "Sauces & Add-ons",
-          "price": 0.50,
-          "tags": ["add-on"]
+          "price": 0.5,
+          "tags": [
+            "add-on"
+          ]
         },
         {
           "id": "chili-oil",
           "name": "Chili Oil",
           "category": "Sauces & Add-ons",
-          "price": 0.50,
-          "tags": ["add-on"]
+          "price": 0.5,
+          "tags": [
+            "add-on"
+          ]
         },
         {
           "id": "rice",
           "name": "Rice",
           "category": "Sauces & Add-ons",
-          "price": 1.00,
-          "tags": ["add-on"]
+          "price": 1,
+          "tags": [
+            "add-on"
+          ]
         },
         {
           "id": "home-made-curry",
           "name": "Home-Made Curry",
           "category": "Sauces & Add-ons",
-          "price": 1.50,
-          "tags": ["add-on"]
+          "price": 1.5,
+          "tags": [
+            "add-on"
+          ]
         },
         {
           "id": "sweet-spicy-glaze",
           "name": "Sweet-Spicy Glaze",
           "category": "Sauces & Add-ons",
-          "price": 0.50,
-          "tags": ["add-on", "spicy"]
+          "price": 0.5,
+          "tags": [
+            "add-on",
+            "spicy"
+          ]
         },
         {
           "id": "spicy-creamy-sauce",
           "name": "Spicy & Creamy Sauce",
           "category": "Sauces & Add-ons",
-          "price": 2.00,
-          "tags": ["add-on", "spicy"]
+          "price": 2,
+          "tags": [
+            "add-on",
+            "spicy"
+          ]
         },
         {
           "id": "brioche-bun",
           "name": "Brioche Bun",
           "category": "Sauces & Add-ons",
-          "price": 2.00,
-          "tags": ["add-on"]
+          "price": 2,
+          "tags": [
+            "add-on"
+          ]
         }
       ]
     }
