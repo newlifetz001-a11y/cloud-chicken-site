@@ -48,6 +48,7 @@
   max-width: 760px;
   font-size: clamp(3rem, 8vw, 6.5rem);
   line-height: 0.95;
+  overflow-wrap: break-word;
 }
 
 .menu-hero p {
@@ -97,6 +98,7 @@
   max-width: 820px;
   font-size: clamp(3.25rem, 8vw, 7rem);
   line-height: 0.92;
+  overflow-wrap: break-word;
 }
 
 .family-hero p {
@@ -144,6 +146,7 @@
   max-width: 820px;
   font-size: clamp(3rem, 8vw, 6.75rem);
   line-height: 0.92;
+  overflow-wrap: break-word;
 }
 
 .visit-hero p {
@@ -188,6 +191,7 @@
   max-width: 760px;
   font-size: clamp(3rem, 8vw, 6.5rem);
   line-height: 0.95;
+  overflow-wrap: break-word;
 }
 
 .not-found p {
@@ -237,6 +241,7 @@
   max-width: 780px;
   font-size: clamp(3.6rem, 10vw, 8.5rem);
   line-height: 0.9;
+  overflow-wrap: break-word;
 }
 
 .hero-slogan {
@@ -542,6 +547,19 @@ address {
 }
 
 @media (max-width: 620px) {
+  .hero,
+  .menu-hero,
+  .family-hero,
+  .visit-hero,
+  .not-found {
+    overflow-x: clip;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 15vw, 4.9rem);
+    line-height: 0.95;
+  }
+
   .hero-actions {
     gap: 0.65rem;
   }
@@ -560,7 +578,14 @@ address {
   }
 
   .family-hero h1 {
-    font-size: clamp(3.1rem, 15vw, 5.2rem);
+    font-size: clamp(2.85rem, 13vw, 4.35rem);
+    line-height: 0.98;
+  }
+
+  .menu-hero h1,
+  .not-found h1 {
+    font-size: clamp(2.75rem, 13vw, 4.25rem);
+    line-height: 1;
   }
 
   .visit-hero {
@@ -568,6 +593,7 @@ address {
   }
 
   .visit-hero h1 {
-    font-size: clamp(3rem, 14vw, 5rem);
+    font-size: clamp(2.8rem, 13vw, 4.35rem);
+    line-height: 1;
   }
 }
