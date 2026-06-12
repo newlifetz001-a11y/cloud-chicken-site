@@ -12,9 +12,68 @@ const formatMenuPrice = (price) => {
   return "";
 };
 
+const createAltText = (item) => {
+  const altTextByName = {
+    "Spicy Chicken Sandwich Combo": "Spicy Chicken Sandwich Combo with fries and drink",
+    "Crispy Chicken Sandwich Combo": "Crispy Chicken Sandwich Combo with side and drink",
+    "Chicken Katsu Sandwich Combo": "Chicken Katsu Sandwich Combo with side and drink",
+    "Filet-O-Fish Burger Combo": "Filet-O-Fish Burger Combo with side and drink",
+    "Meat-Lover Crispy Chicken Sandwich Combo": "Meat-Lover Crispy Chicken Sandwich Combo with side and drink",
+    "Spicy Chicken Sandwich": "Spicy Chicken Sandwich",
+    "Crispy Chicken Sandwich": "Crispy Chicken Sandwich",
+    "Chicken Katsu Sandwich": "Chicken Katsu Sandwich",
+    "Filet-O-Fish Burger": "Filet-O-Fish Burger",
+    "Meat-Lover Crispy Chicken Sandwich": "Meat-Lover Crispy Chicken Sandwich",
+    "Crispy Chicken Katsu": "Crispy Chicken Katsu",
+    "Chicken Wings 2 pcs": "Chicken Wings 2 pcs",
+    "Chicken Wings Combo": "Chicken Wings Combo with side and drink",
+    "Chicken Wings Bucket 10": "Chicken Wings Bucket 10 with fries",
+    "Popcorn Chicken": "Popcorn Chicken",
+    "Popcorn Chicken Meal": "Popcorn Chicken Meal",
+    "Popcorn Chicken Family Bucket": "Popcorn Chicken Family Bucket",
+    "Chicken Nuggets 6 pcs": "Chicken Nuggets 6 pcs",
+    "Curry Chicken Katsu Rice Bowl": "Curry Chicken Katsu Rice Bowl",
+    "Curry Chicken Katsu Rice Meal": "Curry Chicken Katsu Rice Meal",
+    "Spicy Creamy Alfredo Chicken Rice Bowl": "Spicy Creamy Alfredo Chicken Rice Bowl",
+    "Spicy Creamy Alfredo Chicken Rice Bowl Combo": "Spicy Creamy Alfredo Chicken Rice Bowl Combo",
+    "Mixed Family Bucket - Good for Two": "Mixed Family Bucket",
+    "Signature Fries": "Signature Fries",
+    "Waffle Cut Fries": "Waffle Cut Fries",
+    "Sweet Potato Fries": "Sweet Potato Fries",
+    "Onion Rings": "Onion Rings"
+  };
+
+  return altTextByName[item.name] || item.name;
+};
+
+const createMenuItemImage = (item) => {
+  if (!item.image) {
+    return null;
+  }
+
+  const figure = document.createElement("figure");
+  figure.className = "image-slot menu-card-image-slot";
+
+  const image = document.createElement("img");
+  image.src = item.image;
+  image.alt = createAltText(item);
+  image.loading = "lazy";
+  image.addEventListener("error", () => {
+    figure.remove();
+  });
+
+  figure.append(image);
+  return figure;
+};
+
 const createMenuItemCard = (item) => {
   const article = document.createElement("article");
   article.className = "menu-item-card";
+
+  const image = createMenuItemImage(item);
+  if (image) {
+    article.append(image);
+  }
 
   const content = document.createElement("div");
   const title = document.createElement("h3");
