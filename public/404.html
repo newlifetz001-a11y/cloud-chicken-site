@@ -4,18 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page Not Found | Cloud Chicken</title>
-  <meta name="description" content="Cloud Chicken page not found.">
+  <meta name="description" content="This Cloud Chicken page could not be found. Return home, view the menu, or order online.">
   <meta name="robots" content="noindex,nofollow">
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/variables.css">
-  <link rel="stylesheet" href="assets/css/layout.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-  <script src="assets/js/main.js"></script>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Cloud Chicken home">
+      <span class="brand-mark" aria-hidden="true">CC</span>
+      <span class="brand-text">Cloud Chicken</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/menu/">Menu</a>
+      <a href="/family-meals/">Family Meals</a>
+      <a href="/about/">About</a>
+      <a href="/visit-us/">Visit Us</a>
+    </nav>
+    <a class="button button-small header-order" href="https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093">Order Online</a>
+  </header>
+
+  <main>
+    <section class="not-found section-sky" aria-labelledby="not-found-title">
+      <div class="cloud cloud-one" aria-hidden="true"></div>
+      <div class="not-found-content">
+        <p class="eyebrow">404</p>
+        <h1 id="not-found-title">This page flew off the tray</h1>
+        <p>The page you are looking for is not available. Head back to Cloud Chicken, browse the menu, or place an online order.</p>
+        <div class="hero-actions" aria-label="404 page actions">
+          <a class="button" href="/">Home</a>
+          <a class="button button-secondary" href="/menu/">Menu</a>
+          <a class="button button-secondary" href="https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093">Order Online</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Cloud Chicken.</p>
+    <a href="/visit-us/">Visit Us</a>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
