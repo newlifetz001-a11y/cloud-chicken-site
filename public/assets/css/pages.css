@@ -153,6 +153,50 @@
   font-size: 1.1rem;
 }
 
+.not-found {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 148px);
+  padding: clamp(3rem, 8vw, 6rem) var(--space-page);
+}
+
+.not-found::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 44px;
+  content: "";
+  background-color: var(--color-orange);
+  background-image:
+    linear-gradient(45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%);
+  background-position: 0 0, 0 16px, 16px -16px, -16px 0;
+  background-size: 32px 32px;
+}
+
+.not-found-content {
+  position: relative;
+  z-index: 1;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.not-found h1 {
+  max-width: 760px;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: 0.95;
+}
+
+.not-found p {
+  max-width: 620px;
+  margin-top: 1rem;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+}
+
 .visit-card {
   padding: 1.35rem;
   background: rgba(255, 255, 255, 0.82);
