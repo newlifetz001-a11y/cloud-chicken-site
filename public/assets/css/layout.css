@@ -76,6 +76,12 @@ body {
   border-top: 1px solid var(--color-line);
 }
 
+.site-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+}
+
 @media (max-width: 820px) {
   .site-footer,
   .split-section,

@@ -1,5 +1,72 @@
 {
-  "categories": [],
+  "categories": [
+    {
+      "name": "Chicken Sandwiches",
+      "items": [
+        {
+          "name": "Spicy Chicken Sandwich Combo",
+          "description": "Crispy chicken sandwich served as a combo meal.",
+          "price": 12.99
+        }
+      ]
+    },
+    {
+      "name": "Combo Meals",
+      "items": [
+        {
+          "name": "Spicy Chicken Sandwich Combo",
+          "description": "A bold crispy chicken sandwich combo built for a full meal.",
+          "price": 12.99
+        }
+      ]
+    },
+    {
+      "name": "Fried Chicken",
+      "items": [
+        {
+          "name": "Crispy Chicken Katsu",
+          "description": "Golden chicken katsu with a satisfying crunch in every bite.",
+          "price": 13.49
+        },
+        {
+          "name": "Popcorn Chicken",
+          "description": "Bite-sized crispy chicken for snacking or sharing.",
+          "price": 8.99
+        },
+        {
+          "name": "Chicken Wings Bucket 10",
+          "description": "A shareable wing bucket for crispy chicken fans."
+        }
+      ]
+    },
+    {
+      "name": "Rice Bowls",
+      "items": [
+        {
+          "name": "Curry Chicken Katsu Rice Bowl",
+          "description": "Crispy chicken katsu served with curry and rice."
+        }
+      ]
+    },
+    {
+      "name": "Sides",
+      "items": [
+        {
+          "name": "Sides",
+          "description": "Add sides to sandwiches, bowls, fried chicken, and family meals."
+        }
+      ]
+    },
+    {
+      "name": "Family Meals",
+      "items": [
+        {
+          "name": "Family Meals",
+          "description": "Shareable options for family dinners, office lunches, and weekend cravings."
+        }
+      ]
+    }
+  ],
   "bestSellers": [
     {
       "name": "Spicy Chicken Sandwich Combo",
@@ -13,7 +80,11 @@
       "name": "Popcorn Chicken",
       "price": 8.99
     },
-    "Chicken Wings Bucket 10",
-    "Curry Chicken Katsu Rice Bowl"
+    {
+      "name": "Chicken Wings Bucket 10"
+    },
+    {
+      "name": "Curry Chicken Katsu Rice Bowl"
+    }
   ]
 }
