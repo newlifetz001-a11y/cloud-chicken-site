@@ -1,7 +1,7 @@
 .section-sky {
   background:
-    radial-gradient(circle at 82% 22%, var(--color-hero-highlight) 0 12%, transparent 13%),
-    linear-gradient(180deg, var(--color-surface-blue) 0%, var(--color-sky-soft) 100%);
+    radial-gradient(circle at 82% 22%, rgba(255, 255, 255, 0.58) 0 12%, transparent 13%),
+    linear-gradient(180deg, #e7f7ff 0%, var(--color-sky-soft) 100%);
 }
 
 .hero {
@@ -31,10 +31,10 @@
   content: "";
   background-color: var(--color-orange);
   background-image:
-    linear-gradient(45deg, var(--color-pattern-mark) 25%, transparent 25%),
-    linear-gradient(-45deg, var(--color-pattern-mark) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, var(--color-pattern-mark) 75%),
-    linear-gradient(-45deg, transparent 75%, var(--color-pattern-mark) 75%);
+    linear-gradient(45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%);
   background-position: 0 0, 0 16px, 16px -16px, -16px 0;
   background-size: 32px 32px;
 }
@@ -81,10 +81,10 @@
   content: "";
   background-color: var(--color-orange);
   background-image:
-    linear-gradient(45deg, var(--color-pattern-mark) 25%, transparent 25%),
-    linear-gradient(-45deg, var(--color-pattern-mark) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, var(--color-pattern-mark) 75%),
-    linear-gradient(-45deg, transparent 75%, var(--color-pattern-mark) 75%);
+    linear-gradient(45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%);
   background-position: 0 0, 0 16px, 16px -16px, -16px 0;
   background-size: 32px 32px;
 }
@@ -125,10 +125,10 @@
   content: "";
   background-color: var(--color-orange);
   background-image:
-    linear-gradient(45deg, var(--color-pattern-mark) 25%, transparent 25%),
-    linear-gradient(-45deg, var(--color-pattern-mark) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, var(--color-pattern-mark) 75%),
-    linear-gradient(-45deg, transparent 75%, var(--color-pattern-mark) 75%);
+    linear-gradient(45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%);
   background-position: 0 0, 0 16px, 16px -16px, -16px 0;
   background-size: 32px 32px;
 }
@@ -174,10 +174,10 @@
   content: "";
   background-color: var(--color-orange);
   background-image:
-    linear-gradient(45deg, var(--color-pattern-mark) 25%, transparent 25%),
-    linear-gradient(-45deg, var(--color-pattern-mark) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, var(--color-pattern-mark) 75%),
-    linear-gradient(-45deg, transparent 75%, var(--color-pattern-mark) 75%);
+    linear-gradient(45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%);
   background-position: 0 0, 0 16px, 16px -16px, -16px 0;
   background-size: 32px 32px;
 }
@@ -205,8 +205,8 @@
 
 .visit-card {
   padding: 1.35rem;
-  background: var(--color-cloud-soft);
-  border: 1px solid var(--color-accent-border);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(244, 123, 32, 0.28);
   border-radius: var(--radius-small);
   box-shadow: var(--shadow-soft);
 }
@@ -225,10 +225,10 @@
   content: "";
   background-color: var(--color-orange);
   background-image:
-    linear-gradient(45deg, var(--color-pattern-mark) 25%, transparent 25%),
-    linear-gradient(-45deg, var(--color-pattern-mark) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, var(--color-pattern-mark) 75%),
-    linear-gradient(-45deg, transparent 75%, var(--color-pattern-mark) 75%);
+    linear-gradient(45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.28) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.28) 75%);
   background-position: 0 0, 0 18px, 18px -18px, -18px 0;
   background-size: 36px 36px;
 }
@@ -275,9 +275,9 @@
   width: min(100%, 470px);
   height: clamp(285px, 38vw, 440px);
   min-height: clamp(285px, 38vw, 440px);
-  border: 6px solid var(--color-cloud-soft);
+  border: 6px solid rgba(255, 255, 255, 0.72);
   border-radius: 22px;
-  box-shadow: var(--shadow-hero-image);
+  box-shadow: 0 28px 70px rgba(38, 50, 56, 0.18);
   transform: rotate(1.5deg);
 }
 
@@ -340,10 +340,10 @@
   content: "";
   background-color: var(--color-orange);
   background-image:
-    linear-gradient(45deg, var(--color-pattern-mark-strong) 25%, transparent 25%),
-    linear-gradient(-45deg, var(--color-pattern-mark-strong) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, var(--color-pattern-mark-strong) 75%),
-    linear-gradient(-45deg, transparent 75%, var(--color-pattern-mark-strong) 75%);
+    linear-gradient(45deg, rgba(255, 255, 255, 0.32) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.32) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.32) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.32) 75%);
   background-position: 0 0, 0 11px, 11px -11px, -11px 0;
   background-size: 22px 22px;
   border-radius: var(--radius-small);
@@ -363,7 +363,7 @@
   position: relative;
   max-width: none;
   background:
-    linear-gradient(180deg, var(--color-hero-highlight), transparent),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.56), rgba(255, 255, 255, 0)),
     var(--color-sky-soft);
 }
 
@@ -389,10 +389,10 @@
   content: "";
   background-color: var(--color-orange);
   background-image:
-    linear-gradient(45deg, var(--color-pattern-mark-strong) 25%, transparent 25%),
-    linear-gradient(-45deg, var(--color-pattern-mark-strong) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, var(--color-pattern-mark-strong) 75%),
-    linear-gradient(-45deg, transparent 75%, var(--color-pattern-mark-strong) 75%);
+    linear-gradient(45deg, rgba(255, 255, 255, 0.32) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.32) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.32) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.32) 75%);
   background-position: 0 0, 0 12px, 12px -12px, -12px 0;
   background-size: 24px 24px;
   border-radius: var(--radius-small);
@@ -414,7 +414,7 @@
   gap: 1.5rem;
   max-width: none;
   background:
-    linear-gradient(90deg, var(--color-cloud-soft), var(--color-cloud-faint)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.18)),
     var(--color-sky-soft);
 }
 
@@ -465,7 +465,7 @@
   z-index: 4;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  background: var(--color-nav-bg);
+  background: rgba(255, 248, 232, 0.94);
   border-bottom: 1px solid var(--color-line);
   backdrop-filter: blur(12px);
 }
