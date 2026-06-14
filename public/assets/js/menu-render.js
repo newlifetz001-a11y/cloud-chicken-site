@@ -1,17 +1,5 @@
 const orderOnlineUrl = "https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093";
 
-const formatMenuPrice = (price) => {
-  if (typeof price === "number") {
-    return `$${price.toFixed(2)}`;
-  }
-
-  if (typeof price === "string" && price.trim()) {
-    return price.trim().startsWith("$") ? price.trim() : `$${price.trim()}`;
-  }
-
-  return "";
-};
-
 const createAltText = (item) => {
   const altTextByName = {
     "Spicy Chicken Sandwich Combo": "Spicy Chicken Sandwich Combo with fries and drink",
@@ -67,6 +55,65 @@ const createMenuItemImage = (item) => {
   return figure;
 };
 
+const tagLabels = {
+  "best-seller": "Best Seller",
+  "spicy": "Spicy",
+  "combo": "Combo",
+  "family-meal": "Family Meal",
+  "rice-bowl": "Rice Bowl",
+  "fried-chicken": "Crispy Chicken",
+  "side": "Side",
+  "drink": "Drink",
+  "add-on": "Add-on"
+};
+
+const extraTagsByName = {
+  "Spicy Chicken Sandwich Combo": ["Best Seller", "Spicy", "Halal", "Combo", "Popular"],
+  "Crispy Chicken Katsu": ["Best Seller", "Halal", "Popular"],
+  "Popcorn Chicken": ["Best Seller", "Halal", "Popular"],
+  "Chicken Wings Bucket 10": ["Best Seller", "Family Meal", "Halal", "Good for Two"],
+  "Mixed Family Bucket - Good for Two": ["Family Meal", "Good for Two", "Combo", "Popular"],
+  "Signature Fries": ["Under $10"],
+  "Waffle Cut Fries": ["Under $10"],
+  "Onion Rings": ["Under $10"],
+  "Chicken Nuggets 6 pcs": ["Under $10"]
+};
+
+const createItemTags = (item, categoryName) => {
+  const labels = new Set();
+
+  if (Array.isArray(item.tags)) {
+    item.tags.forEach((tag) => {
+      if (tagLabels[tag]) {
+        labels.add(tagLabels[tag]);
+      }
+    });
+  }
+
+  if (categoryName === "Best Sellers") {
+    labels.add("Best Seller");
+    labels.add("Popular");
+  }
+
+  (extraTagsByName[item.name] || []).forEach((tag) => labels.add(tag));
+
+  if (!labels.size) {
+    return null;
+  }
+
+  const list = document.createElement("div");
+  list.className = "product-tag-list";
+  list.setAttribute("aria-label", "Item highlights");
+
+  Array.from(labels).slice(0, 5).forEach((label) => {
+    const tag = document.createElement("span");
+    tag.textContent = label;
+    list.append(tag);
+  });
+
+  return list;
+};
+
 const createMenuItemCard = (item, categoryName) => {
   const article = document.createElement("article");
   article.className = "menu-item-card";
@@ -96,23 +143,20 @@ const createMenuItemCard = (item, categoryName) => {
     content.append(description);
   }
 
+  const tags = createItemTags(item, categoryName);
+  if (tags) {
+    content.append(tags);
+  }
+
   article.append(content);
 
   const footer = document.createElement("div");
   footer.className = "menu-card-footer";
 
-  const price = formatMenuPrice(item.price);
-  if (price) {
-    const priceElement = document.createElement("p");
-    priceElement.className = "menu-price";
-    priceElement.textContent = price;
-    footer.append(priceElement);
-  }
-
   const orderLink = document.createElement("a");
   orderLink.className = "button button-small";
   orderLink.href = orderOnlineUrl;
-  orderLink.textContent = "Order Now";
+  orderLink.textContent = "Order Pickup";
   footer.append(orderLink);
   article.append(footer);
 

@@ -1,3 +1,7 @@
+const orderPickupUrl = "https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093";
+const directionsUrl = "https://www.google.com/maps/search/?api=1&query=66%20South%20Dobson%20Road%20%23124%2C%20Mesa%2C%20AZ%2085202";
+const phoneUrl = "tel:+14808598802";
+
 const markMissingImages = () => {
   document.querySelectorAll(".image-slot img").forEach((image) => {
     const slot = image.closest(".image-slot");
@@ -20,70 +24,33 @@ const markMissingImages = () => {
   });
 };
 
-const collectMenuItems = (value, items = []) => {
-  if (Array.isArray(value)) {
-    value.forEach((entry) => collectMenuItems(entry, items));
-    return items;
-  }
-
-  if (value && typeof value === "object") {
-    if (typeof value.name === "string" || typeof value.title === "string") {
-      items.push(value);
-    }
-
-    Object.values(value).forEach((entry) => collectMenuItems(entry, items));
-  }
-
-  return items;
-};
-
-const normalizeName = (name) => name.trim().toLowerCase();
-
-const formatPrice = (price) => {
-  if (typeof price === "number") {
-    return `$${price.toFixed(2)}`;
-  }
-
-  if (typeof price === "string" && price.trim()) {
-    return price.trim().startsWith("$") ? price.trim() : `$${price.trim()}`;
-  }
-
-  return "";
-};
-
-const renderMenuPrices = async () => {
-  const priceTargets = document.querySelectorAll("[data-price-for]");
-
-  if (!priceTargets.length) {
+const createStickyActionBar = () => {
+  if (document.querySelector(".mobile-action-bar")) {
     return;
   }
 
-  try {
-    const response = await fetch("data/menu.json");
-    const menuData = await response.json();
-    const menuItems = collectMenuItems(menuData);
+  const bar = document.createElement("nav");
+  bar.className = "mobile-action-bar";
+  bar.setAttribute("aria-label", "Quick actions");
 
-    priceTargets.forEach((target) => {
-      const targetName = normalizeName(target.dataset.priceFor || "");
-      const match = menuItems.find((item) => {
-        const itemName = item.name || item.title || "";
-        return normalizeName(itemName) === targetName;
-      });
-      const price = match ? formatPrice(match.price) : "";
+  const actions = [
+    { label: "Order", href: orderPickupUrl, aria: "Order pickup online" },
+    { label: "Directions", href: directionsUrl, aria: "Get directions to Cloud Chicken" },
+    { label: "Call", href: phoneUrl, aria: "Call Cloud Chicken" }
+  ];
 
-      if (price) {
-        target.textContent = price;
-        target.hidden = false;
-      }
-    });
-  } catch (error) {
-    priceTargets.forEach((target) => {
-      target.hidden = true;
-    });
-  }
+  actions.forEach((action) => {
+    const link = document.createElement("a");
+    link.href = action.href;
+    link.textContent = action.label;
+    link.setAttribute("aria-label", action.aria);
+    bar.append(link);
+  });
+
+  document.body.append(bar);
 };
 
 document.addEventListener("DOMContentLoaded", () => {
   markMissingImages();
-  renderMenuPrices();
+  createStickyActionBar();
 });

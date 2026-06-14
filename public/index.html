@@ -3,14 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cloud Chicken | Crispy Chicken in Mesa, AZ</title>
-  <meta name="description" content="Cloud Chicken is a crispy chicken restaurant in Mesa, Arizona serving sunny, family-friendly favorites. You found the crunch.">
+  <title>Cloud Chicken | Halal Crispy Chicken in Mesa, AZ</title>
+  <meta name="description" content="Cloud Chicken serves halal crispy chicken options, sandwiches, rice bowls, popcorn chicken, and family buckets for pickup in Mesa, Arizona.">
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/variables.css">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/pages.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Cloud Chicken",
+    "url": "https://cloud-chickenaz.netlify.app/",
+    "image": "https://cloud-chickenaz.netlify.app/assets/images/hero-chicken-combo.jpg",
+    "telephone": "+1-480-859-8802",
+    "servesCuisine": "Crispy chicken",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "66 South Dobson Road #124",
+      "addressLocality": "Mesa",
+      "addressRegion": "AZ",
+      "postalCode": "85202",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday"],
+        "opens": "11:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "11:00",
+        "closes": "20:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "11:00",
+        "closes": "20:00"
+      }
+    ],
+    "hasMenu": "https://cloud-chickenaz.netlify.app/menu/"
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -24,7 +64,7 @@
       <a href="about/">About</a>
       <a href="visit-us/">Visit Us</a>
     </nav>
-    <a class="button button-small header-order" href="https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093">Order Online</a>
+    <a class="button button-small header-order" href="https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093">Order Pickup</a>
   </header>
 
   <main>
@@ -32,17 +72,18 @@
       <div class="cloud cloud-one" aria-hidden="true"></div>
       <div class="cloud cloud-two" aria-hidden="true"></div>
       <div class="hero-content">
-        <p class="eyebrow">Mesa, Arizona</p>
-        <h1 id="hero-title">Cloud Chicken</h1>
+        <p class="eyebrow">Halal chicken available in Mesa, AZ</p>
+        <h1 id="hero-title">Halal Crispy Chicken in Mesa</h1>
         <p class="hero-slogan">You found the crunch.</p>
-        <p class="hero-copy">Freshly fried chicken sandwiches, popcorn chicken, rice bowls, and family meals in Mesa, Arizona.</p>
+        <p class="hero-copy">Fresh-fried chicken sandwiches, rice bowls, popcorn chicken, and family buckets made for pickup and casual family meals.</p>
         <div class="trust-badges" aria-label="Cloud Chicken highlights">
           <span>Freshly Fried</span>
-          <span>Family Meals</span>
-          <span>Mesa, Arizona</span>
+          <span>Halal Chicken Available</span>
+          <span>Family Buckets</span>
+          <span>Mesa, AZ</span>
         </div>
         <div class="hero-actions" aria-label="Primary actions">
-          <a class="button" href="https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093">Order Online</a>
+          <a class="button" href="https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093">Order Pickup</a>
           <a class="button button-secondary" href="menu/">View Menu</a>
           <a class="button button-secondary" href="https://www.google.com/maps/search/?api=1&query=66%20South%20Dobson%20Road%20%23124%2C%20Mesa%2C%20AZ%2085202">Get Directions</a>
         </div>
@@ -70,9 +111,13 @@
             <p class="product-meta">Best Seller</p>
             <h3>Spicy Chicken Sandwich Combo</h3>
             <p>Spicy chicken sandwich served with a side and drink.</p>
+            <div class="product-tag-list" aria-label="Item highlights">
+              <span>Spicy</span>
+              <span>Halal</span>
+              <span>Combo</span>
+            </div>
             <div class="product-card-actions">
-              <p class="product-price" data-price-for="Spicy Chicken Sandwich Combo">$12.99</p>
-              <a class="button button-small" href="https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093">Order Now</a>
+              <a class="button button-small" href="https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093">Order Pickup</a>
             </div>
           </div>
         </article>
@@ -85,9 +130,12 @@
             <p class="product-meta">Best Seller</p>
             <h3>Crispy Chicken Katsu</h3>
             <p>Crispy fried chicken katsu.</p>
+            <div class="product-tag-list" aria-label="Item highlights">
+              <span>Halal</span>
+              <span>Popular</span>
+            </div>
             <div class="product-card-actions">
-              <p class="product-price" data-price-for="Crispy Chicken Katsu">$13.49</p>
-              <a class="button button-small" href="https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093">Order Now</a>
+              <a class="button button-small" href="https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093">Order Pickup</a>
             </div>
           </div>
         </article>
@@ -100,9 +148,12 @@
             <p class="product-meta">Best Seller</p>
             <h3>Popcorn Chicken</h3>
             <p>Boneless popcorn chicken.</p>
+            <div class="product-tag-list" aria-label="Item highlights">
+              <span>Halal</span>
+              <span>Popular</span>
+            </div>
             <div class="product-card-actions">
-              <p class="product-price" data-price-for="Popcorn Chicken">$8.99</p>
-              <a class="button button-small" href="https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093">Order Now</a>
+              <a class="button button-small" href="https://pos.chowbus.com/online-ordering/store/cloud-chicken/21093">Order Pickup</a>
             </div>
           </div>
         </article>
@@ -112,20 +163,20 @@
     <section class="section" aria-labelledby="why-title">
       <div class="section-heading">
         <p class="eyebrow">Why Cloud Chicken</p>
-        <h2 id="why-title">Crunch that feels easy to love</h2>
+        <h2 id="why-title">Why people come back for the crunch</h2>
       </div>
       <div class="info-grid">
         <article class="info-card">
           <h3>Freshly Fried</h3>
-          <p>Crispy, golden chicken made for crunch lovers.</p>
+          <p>Crispy chicken made for crunch lovers.</p>
         </article>
         <article class="info-card">
-          <h3>Family Friendly</h3>
-          <p>Easy meals for lunch, dinner, and casual family nights.</p>
+          <h3>Halal Chicken Available</h3>
+          <p>Halal chicken options are available. Contact the restaurant with specific dietary questions.</p>
         </article>
         <article class="info-card">
-          <h3>Made in Mesa</h3>
-          <p>Serving crispy chicken sandwiches, rice bowls, and sides in Mesa, Arizona.</p>
+          <h3>Family-Friendly Meals</h3>
+          <p>Sandwiches, rice bowls, sides, and buckets made for casual meals and sharing.</p>
         </article>
       </div>
     </section>
@@ -170,7 +221,7 @@
         <h2 id="family-title">Bring home the crunch</h2>
         <p>Shareable meals made for family dinners, office lunches, and weekend cravings.</p>
       </div>
-      <a class="button button-secondary" href="family-meals/">See Family Meals</a>
+      <a class="button button-secondary" href="family-meals/">Family Meals</a>
     </section>
 
     <section class="section visit-preview visit-preview-strong" aria-labelledby="visit-title">
@@ -202,7 +253,7 @@
       <div class="faq-grid">
         <article class="faq-item">
           <h3>Do you offer online ordering?</h3>
-          <p>Yes. Use the Order Online button to order through Chowbus.</p>
+          <p>Yes. Use the Order Pickup button to order through Chowbus.</p>
         </article>
         <article class="faq-item">
           <h3>Where are you located?</h3>
